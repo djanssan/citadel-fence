@@ -47,12 +47,12 @@ const Gallery = () => {
   }, [isModalOpen])
 
   return (
-    <TopBar>
+    <TopBar title="Gallery">
       <div id="gallery" className="px-12 select-none">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
           {images.map((image, index) => (
             <img
-              key={index} // Consider using a unique key if possible
+              key={index}
               className="cursor-pointer object-cover w-full h-60"
               src={image}
               alt="Gallery"

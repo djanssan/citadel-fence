@@ -63,14 +63,14 @@ const About = () => {
                 <img
                   src="/gallery/img20.jpg"
                   alt="loading..."
-                  className="w-[450px] h-[400px] object-cover brightness-55 flex md:hidden mt-8" // responsive width and auto height
+                  className="w-[450px] h-[400px] object-cover brightness-55 flex md:hidden mt-8"
                 />
               </div>
             </div>
             <img
               src="/gallery/img20.jpg"
               alt="loading..."
-              className="hidden md:block w-full md:w-[400px] h-auto object-cover brightness-55 mt-8" // responsive width and auto height
+              className="hidden md:block w-full md:w-[400px] h-auto object-cover brightness-55 mt-8"
             />
           </div>
 
@@ -118,7 +118,7 @@ const About = () => {
             <img
               src="/gallery/img10.jpg"
               alt="loading..."
-              className="w-[550px] h-[400px]" // added max width
+              className="w-[550px] h-[400px]"
             />
           </div>
           <div className="flex gap-2 mb-1 mt-4">
@@ -159,7 +159,7 @@ const About = () => {
             <img
               src="/gallery/img59.jpg"
               alt="loading..."
-              className="w-[550px] h-[400px]" // added max width
+              className="w-[550px] h-[400px]"
             />
           </div>
           <div className="flex gap-2 mb-1 mt-4">
@@ -228,12 +228,12 @@ const About = () => {
                   <img
                     src="/gallery/img30.jpg"
                     alt="loading..."
-                    className="w-[340px] h-[400px] object-cover brightness-55 mt-8" // added max width
+                    className="w-[340px] h-[400px] object-cover brightness-55 mt-8"
                   />
                   <img
                     src="/gallery/img29.jpg"
                     alt="loading..."
-                    className="w-[340px] h-[400px] object-cover brightness-55 mt-8" // added max width
+                    className="w-[340px] h-[400px] object-cover brightness-55 mt-8"
                   />
                 </div>
               </div>

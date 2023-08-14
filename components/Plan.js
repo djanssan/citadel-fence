@@ -14,7 +14,7 @@ const Plan = () => {
   const planImagesMobile = ["/plan1.jpg", "/plan2.jpg", "/plan5.jpg"]
 
   return (
-    <div className="max-w-screen-2xl mx-auto px-4 md:py-20 grid gap-6 md:grid-cols-2">
+    <div className="max-w-screen-2xl mx-auto px-4 md:py-4 grid gap-6 md:grid-cols-2">
       <div className="hidden md:grid gap-4 grid-cols-2 grid-rows-3 auto-rows-fr">
         {planImagesDesktop.map((planImage, index) => (
           <div

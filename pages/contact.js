@@ -5,7 +5,7 @@ import TopBar from "../components/TopBar.jsx"
 
 const Contact = () => {
   return (
-    <TopBar>
+    <TopBar title="Contact Us">
       <div className="container mx-auto md:px-4">
         <ContactForm />
       </div>

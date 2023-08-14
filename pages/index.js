@@ -7,8 +7,8 @@ import TopBar from "../components/TopBar"
 export default function Home() {
   return (
     <TopBar title="Home">
-      <Plan /> {/* Include Plan component */}
-      <Offers /> {/* Include Offers component */}
+      <Plan />
+      <Offers />
       <ContactForm />
     </TopBar>
   )
