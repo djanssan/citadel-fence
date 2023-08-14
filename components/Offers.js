@@ -21,7 +21,7 @@ const Offers = () => {
           key={index}
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
-          <h3 className="absolute inset-0 flex items-center justify-center text-2xl md:text-3xl font-bold text-white">
+          <h3 className="absolute inset-0 flex items-center justify-center text-2xl md:text-3xl font-bold text-white text-center">
             {card.title}
           </h3>
         </div>
