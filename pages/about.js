@@ -21,7 +21,7 @@ const About = () => {
         <div className="flex flex-col mt-2 md:mt-4 lg:mt-8 sm:px-6 md:px-8 mb-12">
           {/* Third Section */}
           <h3 className="text-2xl lg:text-3xl">Colorbond Fencing</h3>
-          <hr className="border-blue-700/80 w-[290px]" />
+          <hr className="border-blue-700/80 w-[240px] md:w-[290px]" />
           <div className="md:flex md:justify-between md:gap-8">
             <div>
               <h1 className="py-4 text-lg lg:text-xl mt-4">
@@ -78,7 +78,7 @@ const About = () => {
 
           {/* First Section */}
           <h3 className="text-2xl lg:text-3xl mt-4 md:mt-8">Paling Fences</h3>
-          <hr className="border-blue-700/80 w-[210px]" />
+          <hr className="border-blue-700/80 w-[170px] md:w-[210px]" />
           <h1 className=" py-4 text-lg lg:text-xl mt-2">
             Timber paling fences are a durable and renewable form of fencing
             that are constructed using a combination of soft and hard woods.
@@ -164,7 +164,6 @@ const About = () => {
               className="w-[550px] h-[400px]" // added max width
             />
           </div>
-
           <div className="flex gap-2 mb-1 mt-4">
             <AiOutlineStar className="mt-1" />
             <h1 className="text-lg lg:text-xl">Nails</h1>
@@ -175,7 +174,6 @@ const About = () => {
             fixed with ring shank or screw shank nails with a minimum length of
             50mm.
           </p>
-
           <div className="flex gap-2 mb-1 mt-4">
             <AiOutlineStar className="mt-1" />
             <h1 className="text-lg lg:text-xl">Capping</h1>
@@ -209,7 +207,7 @@ const About = () => {
           <h3 className="text-2xl lg:text-3xl mt-8 lg:mt-16">
             Fence repairs and maintenance
           </h3>
-          <hr className="border-blue-700/80 w-[450px]" />
+          <hr className="border-blue-700/80 w-[355px] md:w-[450px]" />
           <h1 className="py-4 text-lg lg:text-xl mt-2">
             For all types of fences
           </h1>

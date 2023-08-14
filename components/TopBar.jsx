@@ -17,7 +17,6 @@ export default function Layout({ title, children }) {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024 || mobileMenu) {
-        // Adjust the value to match the 'large' breakpoint in your Tailwind CSS config
         setMobileMenu(false)
       }
     }
@@ -30,7 +29,6 @@ export default function Layout({ title, children }) {
   }, [])
 
   useEffect(() => {
-    // Add or remove "overflow-hidden" class on body depending on mobileMenu state
     if (mobileMenu) {
       document.body.classList.add("overflow-hidden")
     } else {
@@ -59,7 +57,6 @@ export default function Layout({ title, children }) {
                 />
               </a>
             </Link>
-
             <Link href="/">
               <h1
                 onClick={() => {
@@ -83,7 +80,6 @@ export default function Layout({ title, children }) {
                 Home
               </a>
             </Link>
-
             {[
               { label: "About", href: "/about" },
               { label: "Gallery", href: "/gallery" },
@@ -127,7 +123,6 @@ export default function Layout({ title, children }) {
                 href: "/gallery",
                 isActive: isGalleryPage,
               },
-
               {
                 label: "Contact Us",
                 href: "/contact",
@@ -153,13 +148,6 @@ export default function Layout({ title, children }) {
       <main>
         <div className="mb-40">{children}</div>
       </main>
-      {/* <div className="shadow-inner bg-gray-900">
-        <footer className="h-10 flex flex-col justify-center max-w-[1100px] m-auto px-2">
-          <div className="flex justify-center text-xs text-gray-300 md:text-base px-2">
-            Peter Motin © 2023
-          </div>
-        </footer>
-      </div> */}
     </>
   )
 }
