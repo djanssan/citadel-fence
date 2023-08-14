@@ -8,7 +8,7 @@ export default function ContactForm() {
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
   const [message, setMessage] = useState("")
-  const [loading, setLoading] = useState(false) // Add the loading state
+  const [loading, setLoading] = useState(false)
 
   const firstNameRef = useRef()
   const lastNameRef = useRef()
@@ -24,7 +24,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    setLoading(true) // Set loading to true before submitting the form
+    setLoading(true)
     // Validation check
     if (!firstName || !email || !phone || !message) {
       let errorMessage = "Please fill in all the required fields: "
@@ -34,7 +34,7 @@ export default function ContactForm() {
       if (!message) errorMessage += "Message, "
       errorMessage = errorMessage.slice(0, -2) + "."
       toast.error(errorMessage)
-      setLoading(false) // Set loading to false if validation fails
+      setLoading(false)
       return
     }
 
@@ -52,11 +52,8 @@ export default function ContactForm() {
       }),
     })
 
-    console.log("Email receipt response:", response.ok)
-
     if (response.ok) {
       toast.success("Message sent successfully")
-      // toast.success('We will get back to you as soon as possible');
       setFirstName("")
       setLastName("")
       setEmail("")
@@ -65,7 +62,7 @@ export default function ContactForm() {
     } else {
       toast.error("Failed to send email receipt")
     }
-    setLoading(false) // Set loading to false after the submission process is complete
+    setLoading(false)
   }
 
   return (
@@ -78,7 +75,7 @@ export default function ContactForm() {
         </h3>
         <hr className="border-blue-700/80 mx-auto w-1/4" />
         <h1 className="py-4 text-lg lg:text-xl text-center">
-          Get a quote, got a question or just say hello :)
+          Get a quote, ask a question or just say hello :)
         </h1>
 
         <div className="grid md:grid-cols-2 mb-16 text-black">

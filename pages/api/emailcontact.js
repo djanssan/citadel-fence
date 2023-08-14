@@ -1,5 +1,5 @@
-// /Users/admin/Desktop/life/pages/api/emailcontact.js
-import { sendContactEmail } from "../../utils/sendContactEmail"
+// /Users/admin/Desktop/fence-final/pages/api/emailcontact.js
+import { sendContactEmail } from "../../../utils/sendContactEmail"
 
 async function handler(req, res) {
   if (req.method !== "POST") {
@@ -7,7 +7,6 @@ async function handler(req, res) {
   }
 
   const { email, phone, firstName, lastName, message } = req.body
-  // console.log(email + phone + firstName + lastName + message)
 
   if (!email || !phone || !firstName || !message) {
     res.status(422).json({
@@ -18,7 +17,7 @@ async function handler(req, res) {
 
   await sendContactEmail(
     email,
-    "Thank you for reaching out to Peter",
+    "Citadel Fencing - Contact Request",
     `
     <!DOCTYPE html>
     <html lang="en">
@@ -35,7 +34,6 @@ async function handler(req, res) {
           line-height: 1.6;
           background-color: #FFFFFF;
         }
-
 
         h1,
         h3,
@@ -100,11 +98,10 @@ async function handler(req, res) {
           padding-right: 50px;
           
         }
-        
 
-.button a {
-  color: white !important;
-}
+        .button a {
+          color: white !important;
+        }
 
         /* Footer styles */
         .footer {
@@ -125,18 +122,25 @@ async function handler(req, res) {
     </head>
     <body>
       <div class="container">
-    
+        <div class="flex justify-center mb-8 gap-8">
+          <div class="logo">
+            <a href="https://citadel-fence.vercel.app/">
+              <img src="https://i.ibb.co/BrJS5mF/logo.jpg" alt="needs image" class=" max-width: 70px !important" />
+            </a>
+          </div>
+          <h1 class="text-black mt-4">Thank you for contacting us!</h1>
+        </div>
 
         <h3>Your message has been received!</h3>
         <p>Hello ${firstName},</p>
-        <p>Thank you for contacting the Peter. Your inquiry has been successfully received by his team. 
-        Peter will reach out to you as soon as possible via the contact information you provided.</p>
+        <p>Thank you for reaching out. Your inquiry has been successfully received by the Citadel team. 
+        Once a specialist has read your message, they will reach out to you as soon as possible via the contact information you provided.
+        It may take 1 to 3 business days to reply. Hold tight, we will be with you shortly.</p>
   
-
         <p>Thanks,</p>
-        <p>motin.life automated message</p>
+        <p>Citadel Fencing</p>
        
-    
+       
       </div>
     </body>
   </html>
@@ -144,12 +148,12 @@ async function handler(req, res) {
   )
 
   await sendContactEmail(
-    "peter@motin.life",
+    process.env.NEXT_PUBLIC_GMAIL_EMAIL,
     "New Contact Request",
 
-    `  <p>Name: ${firstName + " " + lastName}</p>
+    `<p>Name: ${firstName + " " + lastName}</p>
     <p>Email: ${email}</p>
-    <p>Phone: ${phone}</p>
+    <p>OrderId: ${phone}</p>
     <p>Message: ${message}</p>
   `
   )
@@ -161,6 +165,7 @@ async function handler(req, res) {
 
 export default handler
 
+//    process.env.NEXT_PUBLIC_YANDEX_CONTACT_EMAIL,
 // <html>
 //   <head>
 //     <style>
