@@ -1,9 +1,8 @@
 // /Users/admin/Desktop/fence-final/pages/about.js
-import React from "react"
-import TopBar from "../components/TopBar.jsx"
-// Importing images from the local directory
 import Link from "next/link.js"
+import React from "react"
 import { AiOutlineStar } from "react-icons/ai"
+import TopBar from "../components/TopBar.jsx"
 
 const About = () => {
   return (
@@ -12,23 +11,22 @@ const About = () => {
         <h2 className="sm:px-6 md:px-8 py-2 font-light text-xl xs:text-2xl sm:text-3xl md:text-5xl text-blue-700/80">
           The Citadel Fencing Quality Guide
         </h2>
-        <h1 className="sm:px-6 md:px-8 py-4 text-lg lg:text-xl md:mt-2">
+        <h1 className="sm:px-6 md:px-8 py-4 text-base md:text-lg lg:text-xl md:mt-2">
           Citadel Fencing offers a range of home improvement services including
           timber paling fencing, fence repairs, Colorbond fencing and retaining
           walls.
         </h1>
-
         <div className="flex flex-col mt-2 md:mt-4 lg:mt-8 sm:px-6 md:px-8 mb-12">
           {/* Third Section */}
-          <h3 className="text-2xl lg:text-3xl">Colorbond Fencing</h3>
+          <h3 className="text-xl md:text-2xl lg:text-3xl">Colorbond Fencing</h3>
           <hr className="border-blue-700/80 w-[240px] md:w-[290px]" />
           <div className="md:flex md:justify-between md:gap-8">
             <div>
-              <h1 className="py-4 text-lg lg:text-xl mt-4">
+              <h1 className="py-4 text-base md:text-lg lg:text-xl mt-4">
                 Colorbond Fencing is growing in popularity due to its impactful
                 aesthetic, durability and low maintenance.
               </h1>
-              <p className=" text-sm lg:text-base">
+              <p className="text-xs md:text-sm lg:text-base">
                 Citadel Fencing offers a range of colours for Colorbond Fencing,
                 and knows how to construct them the right way.
                 <br />
@@ -77,17 +75,19 @@ const About = () => {
           </div>
 
           {/* First Section */}
-          <h3 className="text-2xl lg:text-3xl mt-4 md:mt-8">Paling Fences</h3>
+          <h3 className="text-xl md:text-2xl lg:text-3xl mt-4 md:mt-8">
+            Paling Fences
+          </h3>
           <hr className="border-blue-700/80 w-[170px] md:w-[210px]" />
-          <h1 className=" py-4 text-lg lg:text-xl mt-2">
+          <h1 className="py-4 text-base md:text-lg lg:text-xl mt-2">
             Timber paling fences are a durable and renewable form of fencing
             that are constructed using a combination of soft and hard woods.
           </h1>
           <div className="flex gap-2 mb-1">
             <AiOutlineStar className="mt-1" />
-            <h1 className="text-lg lg:text-xl">Palings</h1>
+            <h1 className="text-base md:text-lg lg:text-xl">Palings</h1>
           </div>
-          <p className=" text-sm lg:text-base">
+          <p className="text-xs md:text-sm lg:text-base">
             Timber palings are generally cut from low-grade timber and may
             contain knots and other cosmetic defects. They are chemically
             treated to protect with copper chromium arsenate (hence CCA Treated
@@ -103,9 +103,9 @@ const About = () => {
           </p>
           <div className="flex gap-2 mb-1 mt-4">
             <AiOutlineStar className="mt-1" />
-            <h1 className="text-lg lg:text-xl">Rails</h1>
+            <h1 className="text-base md:text-lg lg:text-xl">Rails</h1>
           </div>
-          <p className=" text-sm lg:text-base">
+          <p className="text-xs md:text-sm lg:text-base">
             Timber fence rails are generally rough sawn from CCA Treated Pine.
             They are generally 75x50mm and are fixed into notches manually cut
             into the fence posts with three 90mm electronically galvanised
@@ -114,7 +114,6 @@ const About = () => {
             additional rails to adequately support the palings, and shorter
             fences may require only two rails.
           </p>
-
           <div className="flex justify-center mt-8">
             <img
               src="/gallery/img10.jpg"
@@ -122,12 +121,11 @@ const About = () => {
               className="w-[550px] h-[400px]" // added max width
             />
           </div>
-
           <div className="flex gap-2 mb-1 mt-4">
             <AiOutlineStar className="mt-1" />
-            <h1 className="text-lg lg:text-xl">Plinths</h1>
+            <h1 className="text-base md:text-lg lg:text-xl">Plinths</h1>
           </div>
-          <p className=" text-sm lg:text-base">
+          <p className="text-xs md:text-sm lg:text-base">
             The plinth is the horizontal plank of timber which sits at ground
             level and supports the palings, which sit above it. Standard plinths
             are 150x25mm. They are rough sawn from CCA Treated Pine and fixed to
@@ -142,9 +140,9 @@ const About = () => {
 
           <div className="flex gap-2 mb-1 mt-4">
             <AiOutlineStar className="mt-1" />
-            <h1 className="text-lg lg:text-xl">Posts</h1>
+            <h1 className="text-base md:text-lg lg:text-xl">Posts</h1>
           </div>
-          <p className=" text-sm lg:text-base">
+          <p className="text-xs md:text-sm lg:text-base">
             Posts are class 1 or 2 durability including Red Gum, Yellow Stringy
             Bark, Jarrah, Bloodwood, and Cypress Pine (which is only used in
             areas not susceptible to strong winds). Posts are cemented into the
@@ -166,9 +164,9 @@ const About = () => {
           </div>
           <div className="flex gap-2 mb-1 mt-4">
             <AiOutlineStar className="mt-1" />
-            <h1 className="text-lg lg:text-xl">Nails</h1>
+            <h1 className="text-base md:text-lg lg:text-xl">Nails</h1>
           </div>
-          <p className=" text-sm lg:text-base">
+          <p className="text-xs md:text-sm lg:text-base">
             Citadel Fencing uses electronically galvanised nails. For the fixing
             of plinths and rails, 90mm framing nails are used, while palings are
             fixed with ring shank or screw shank nails with a minimum length of
@@ -176,9 +174,9 @@ const About = () => {
           </p>
           <div className="flex gap-2 mb-1 mt-4">
             <AiOutlineStar className="mt-1" />
-            <h1 className="text-lg lg:text-xl">Capping</h1>
+            <h1 className="text-base md:text-lg lg:text-xl">Capping</h1>
           </div>
-          <p className=" text-sm lg:text-base">
+          <p className="text-xs md:text-sm lg:text-base">
             Capping is an optional addition to fences available at extra cost.
             It is cut from CCA Treated Pine and can offer additional protection
             to the palings as well as a different aesthetic which is pleasing to
@@ -190,9 +188,11 @@ const About = () => {
 
           <div className="flex gap-2 mb-1 mt-4">
             <AiOutlineStar className="mt-1" />
-            <h1 className="text-lg lg:text-xl">Fence Extensions</h1>
+            <h1 className="text-base md:text-lg lg:text-xl">
+              Fence Extensions
+            </h1>
           </div>
-          <p className=" text-sm lg:text-base">
+          <p className="text-xs md:text-sm lg:text-base">
             Fence extensions are another optional addition to fences available
             at extra cost. Enquire for more information regarding available
             patterns.
@@ -204,16 +204,16 @@ const About = () => {
             warped palings and bubbled paint.
           </p>
           {/* Third Section */}
-          <h3 className="text-2xl lg:text-3xl mt-8 lg:mt-16">
+          <h3 className="text-xl md:text-2xl lg:text-3xl mt-8 lg:mt-16">
             Fence repairs and maintenance
           </h3>
           <hr className="border-blue-700/80 w-[355px] md:w-[450px]" />
-          <h1 className="py-4 text-lg lg:text-xl mt-2">
+          <h1 className="py-4 text-base md:text-lg lg:text-xl mt-2">
             For all types of fences
           </h1>
           <div className="md:flex md:justify-between md:gap-8 ">
             <div>
-              <p className="mt-2 text-sm lg:text-base">
+              <p className="mt-2 text-xs md:text-sm lg:text-base">
                 Citadel Fencing offers post repairs and partial fence
                 replacement where appropriate. In some cases, Citadel Fencing
                 will be called to quote a job at which the previous fencer
@@ -240,7 +240,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-4 mb-4">
+        <div className="flex justify-center mt-4 md:mb-4">
           <Link href="/contact">
             <a className="px-3 md:px-8 py-3 md:text-lg font-medium text-white bg-green-500 rounded-md hover:shadow-lg hover:text-black">
               Get a quote today
