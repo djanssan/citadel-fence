@@ -70,7 +70,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <div id="contact" className="max-w-[1140px] m-auto w-full p-4 md:py-16">
+      <div id="contact" className="max-w-[1140px] m-auto w-full p-4 md:py-8">
         {/* <h2 className="text-center">Send us a message</h2>
         <p className="text-center py-2">We&apos;re standing by!</p> */}
         <h3 className="text-2xl lg:text-3xl text-center">
