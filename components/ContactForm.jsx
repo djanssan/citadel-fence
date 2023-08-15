@@ -67,7 +67,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <div id="contact" className="max-w-[1140px] m-auto w-full p-4 md:py-8">
+      <div id="contact" className="max-w-[1140px] m-auto w-full p-4">
         {/* <h2 className="text-center">Send us a message</h2>
         <p className="text-center py-2">We&apos;re standing by!</p> */}
         <h3 className="text-2xl lg:text-3xl text-center">
@@ -78,7 +78,7 @@ export default function ContactForm() {
           Get a quote, ask a question or just say hello :)
         </h1>
 
-        <div className="grid md:grid-cols-2 mb-16 text-black">
+        <div className="grid md:grid-cols-2 text-black">
           <img
             src="/gallery/img5.jpg"
             alt="Contact Image"

@@ -48,7 +48,7 @@ const Gallery = () => {
 
   return (
     <TopBar title="Gallery">
-      <div id="gallery" className="px-12 select-none">
+      <div id="gallery" className="px-12 md:mt-4 select-none">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
           {images.map((image, index) => (
             <img

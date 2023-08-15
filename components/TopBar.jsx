@@ -64,7 +64,7 @@ export default function Layout({ title, children }) {
                     setMobileMenu((prev) => !prev)
                   }
                 }}
-                className="text-xl md:text-2xl py-2"
+                className="text-xl md:text-2xl mt-1.5"
               >
                 Citadel Fencing
               </h1>
@@ -146,7 +146,7 @@ export default function Layout({ title, children }) {
         </div>
       </header>
       <main>
-        <div className="mb-40">{children}</div>
+        <div className="mb-20">{children}</div>
       </main>
     </>
   )

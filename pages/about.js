@@ -7,7 +7,7 @@ import TopBar from "../components/TopBar.jsx"
 const About = () => {
   return (
     <TopBar title="About">
-      <div className="bg-white md:py-4 px-2 md:px-4">
+      <div className="bg-white md:mt-4 px-2 md:px-4">
         <h2 className="sm:px-6 md:px-8 py-2 font-light text-xl xs:text-2xl sm:text-3xl md:text-5xl text-blue-700/80">
           The Citadel Fencing Quality Guide
         </h2>
@@ -84,7 +84,7 @@ const About = () => {
             that are constructed using a combination of soft and hard woods.
           </h1>
           <div className="flex gap-2 mb-1">
-            <AiOutlineStar className="mt-1" />
+            <AiOutlineStar className="mt-[2.5px]" />
             <h1 className="text-base md:text-lg lg:text-xl">Palings</h1>
           </div>
           <p className="text-xs md:text-sm lg:text-base">
@@ -102,7 +102,7 @@ const About = () => {
             rough sawn, they can vary from 10mm to 14mm in thickness.
           </p>
           <div className="flex gap-2 mb-1 mt-4">
-            <AiOutlineStar className="mt-1" />
+            <AiOutlineStar className="mt-[2.5px]" />
             <h1 className="text-base md:text-lg lg:text-xl">Rails</h1>
           </div>
           <p className="text-xs md:text-sm lg:text-base">
@@ -122,7 +122,7 @@ const About = () => {
             />
           </div>
           <div className="flex gap-2 mb-1 mt-4">
-            <AiOutlineStar className="mt-1" />
+            <AiOutlineStar className="mt-[2.5px]" />
             <h1 className="text-base md:text-lg lg:text-xl">Plinths</h1>
           </div>
           <p className="text-xs md:text-sm lg:text-base">
@@ -139,7 +139,7 @@ const About = () => {
           </p>
 
           <div className="flex gap-2 mb-1 mt-4">
-            <AiOutlineStar className="mt-1" />
+            <AiOutlineStar className="mt-[2.5px]" />
             <h1 className="text-base md:text-lg lg:text-xl">Posts</h1>
           </div>
           <p className="text-xs md:text-sm lg:text-base">
@@ -163,7 +163,7 @@ const About = () => {
             />
           </div>
           <div className="flex gap-2 mb-1 mt-4">
-            <AiOutlineStar className="mt-1" />
+            <AiOutlineStar className="mt-[2.5px]" />
             <h1 className="text-base md:text-lg lg:text-xl">Nails</h1>
           </div>
           <p className="text-xs md:text-sm lg:text-base">
@@ -173,7 +173,7 @@ const About = () => {
             50mm.
           </p>
           <div className="flex gap-2 mb-1 mt-4">
-            <AiOutlineStar className="mt-1" />
+            <AiOutlineStar className="mt-[2.5px]" />
             <h1 className="text-base md:text-lg lg:text-xl">Capping</h1>
           </div>
           <p className="text-xs md:text-sm lg:text-base">
@@ -187,7 +187,7 @@ const About = () => {
           </p>
 
           <div className="flex gap-2 mb-1 mt-4">
-            <AiOutlineStar className="mt-1" />
+            <AiOutlineStar className="mt-[2.5px]" />
             <h1 className="text-base md:text-lg lg:text-xl">
               Fence Extensions
             </h1>
