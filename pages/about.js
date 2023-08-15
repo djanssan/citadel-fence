@@ -70,7 +70,7 @@ const About = () => {
             <img
               src="/gallery/img20.jpg"
               alt="loading..."
-              className="hidden md:block w-full md:w-[400px] h-auto object-cover brightness-55 mt-8"
+              className="hidden md:block w-full md:w-[400px] xl:w-[330px] h-auto object-cover brightness-55 mt-8"
             />
           </div>
 
