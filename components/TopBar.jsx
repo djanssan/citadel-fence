@@ -64,7 +64,7 @@ export default function Layout({ title, children }) {
                     setMobileMenu((prev) => !prev)
                   }
                 }}
-                className="text-xl md:text-2xl mt-1.5"
+                className="text-xl md:text-2xl mt-1"
               >
                 Citadel Fencing
               </h1>
