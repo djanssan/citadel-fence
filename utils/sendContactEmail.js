@@ -1,3 +1,4 @@
+// /Users/admin/Desktop/fence-final/utils/sendContactEmail.js
 import nodemailer from "nodemailer"
 
 export const sendContactEmail = async (email, subject, htmlContent) => {

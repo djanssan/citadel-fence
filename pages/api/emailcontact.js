@@ -1,5 +1,5 @@
 // /Users/admin/Desktop/fence-final/pages/api/emailcontact.js
-import { sendContactEmail } from "../../../utils/sendContactEmail"
+import { sendContactEmail } from "../../utils/sendContactEmail"
 
 async function handler(req, res) {
   if (req.method !== "POST") {
