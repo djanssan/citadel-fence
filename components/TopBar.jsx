@@ -45,7 +45,7 @@ export default function Layout({ title, children }) {
         <meta name="description" content="Website" />
       </Head>
 
-      <header id="header">
+      <header id="header" className="fixed top-0 w-full z-10">
         <div className="flex justify-between items-center px-4 py-2 bg-white">
           <div className="flex items-center gap-2">
             <Link href="/">
@@ -146,7 +146,7 @@ export default function Layout({ title, children }) {
         </div>
       </header>
       <main>
-        <div className="mb-20">{children}</div>
+        <div className="py-[65px]">{children}</div>
       </main>
     </>
   )
