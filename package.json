@@ -24,7 +24,7 @@
     "load-google-maps-api": "^2.0.2",
     "mongoose": "^6.3.4",
     "next": "^12.3.4",
-    "nodemailer": "^6.9.1",
+    "nodemailer": "^6.9.4",
     "react": "18.0.0",
     "react-chartjs-2": "^4.2.0",
     "react-dom": "18.0.0",

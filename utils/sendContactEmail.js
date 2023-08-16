@@ -1,5 +1,3 @@
-// Example htmlContent
-// const htmlContent = `<p>Visit the following link to reset your password: <a href="${SERVER_URL}/update-password?token=${token}">link</a></p>`
 import nodemailer from "nodemailer"
 
 export const sendContactEmail = async (email, subject, htmlContent) => {
